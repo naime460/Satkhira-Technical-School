@@ -1,0 +1,412 @@
+/* Resetting margins and paddings */
+*,
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation Styling */
+.header_Color {
+    background-color: #ffffff;
+}
+
+.nav-item {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: serif;
+    margin-left: 5px;
+    position: relative;
+    z-index: 0;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+.nav-item.active {
+    color: white;
+}
+
+.nav-item::after,
+.nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #00ADEF;
+    height: 0%;
+    width: 100%;
+    transition: .4s all ease-in-out;
+    z-index: -1;
+}
+
+.nav-item::after {
+    top: 0;
+}
+
+.nav-item::before {
+    bottom: 0;
+}
+
+.nav-item:hover::after,
+.nav-item:hover::before {
+    height: 50%;
+}
+
+.nav-item a {
+    color: #585AA8;
+}
+
+/* Social Icons Styling */
+.Social {
+    text-align: center;
+}
+
+.Social i {
+    margin-left: 8px;
+    background-color: #2E3192;
+    padding: 6px 6px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.Social i:hover {
+    background-color: #00ADEF;
+    color: #fff;
+    transition: .2s all ease-in-out;
+    box-shadow: 0 0 9px #87cde2;
+}
+
+/* Hero Section Styling */
+.demo {
+    background-image: url(..//images/image\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 91vh;
+    position: relative;
+    z-index: 0;
+}
+
+.Hero_Title h1 {
+    color: white;
+    margin-top: 201px;
+    font-size: 55px;
+    font-family: system-ui;
+    font-weight: 900;
+    letter-spacing: 2px;
+    width: 70%;
+}
+
+.Hero_Title p {
+    color: #dddddd;
+    font-size: 17px;
+    font-family: system-ui;
+    font-weight: 300;
+    line-height: 34px;
+    margin-top: 38px;
+    width: 70%;
+    letter-spacing: 2px;
+}
+
+.Hero_Title img {
+    width: 79%;
+    filter: blur(3px);
+    margin-left: 59px;
+    margin-top: 178px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #00ADEF;
+    box-shadow: 0 0 90px #1017ff;
+    animation: moveUpDown 2s infinite ease-in-out;
+}
+
+.Hero_Title img:hover {
+    filter: blur(0px);
+    transition: 1s all ease-in-out;
+}
+
+.Hero_Title h2 {
+    font-family: emoji;
+    font-weight: bold;
+    margin-top: -6px;
+}
+
+.Hero_Title h6 {
+    color: #c5bfbf;
+    font-size: 25px;
+    font-family: system-ui;
+    margin-top: 20px;
+}
+
+/* Our Academics Section */
+.Our_Academics {
+    padding: 10px 13px;
+    color: #1229B5;
+    font-weight: 700;
+    box-shadow: 0px 0px 23px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.Our_Academics:hover {
+    background: #c1c1c1;
+    color: #1229B5;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+/* Learning Section */
+.Learning_section h1 {
+    margin-top: 100px;
+    width: 63%;
+    font-size: 51px;
+    font-family: system-ui;
+    font-weight: bold;
+    color: #000;
+}
+
+.line_animation {
+    position: relative;
+    margin-top: 19px;
+    display: block;
+}
+
+.line_animation::after,
+.line_animation::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 7%;
+    background-color: #00ADEF;
+    transition: .5s all ease-in-out;
+}
+
+.line_animation::before {
+    right: 0;
+    margin-right: 85%;
+}
+
+.Learning_section p {
+    margin-top: 33px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: system-ui;
+    width: 92%;
+    color: black;
+}
+
+.Learning_section_p p {
+    margin-top: 254px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: system-ui;
+    width: 92%;
+    color: black;
+}
+
+.Learning_section_p button {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid;
+    text-transform: capitalize;
+    font-size: 19px;
+    font-family: system-ui;
+    margin-top: 20px;
+    font-weight: 800;
+    color: #898989;
+    margin-bottom: 16%;
+}
+
+.Learning_section_p button:hover {
+    border-bottom: 2px solid #898989;
+    color: #000;
+}
+
+.Learning_section_p button i {
+    margin-right: 11px;
+    font-size: 19px;
+}
+
+/* Counter Section */
+.counter_Section h1 {
+    color: #00ADEF;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.counter_Section h3 {
+    text-align: center;
+    font-family: system-ui;
+    font-size: 18px;
+    margin-top: 13px;
+    font-weight: 700;
+}
+
+.counter_Title h3 {
+    text-align: center;
+    font-family: system-ui;
+    margin-bottom: 47px;
+    font-weight: bold;
+}
+
+/* Video Section */
+.video_ {
+    margin-top: 100px;
+    border-radius: 2%;
+}
+
+.background {
+    background: #00adef26;
+    min-height: 50vh;
+    margin-top: -19%;
+}
+
+.video_down i {
+    margin-top: 31%;
+    font-size: 70px;
+    color: #00ADEF;
+}
+
+.video_down h1 {
+    margin-top: 34px;
+    font-family: ui-monospace;
+    font-size: 66px;
+}
+
+.video_down h3 {
+    margin-top: 41px;
+    font-family: fangsong;
+    margin-bottom: 56px;
+}
+
+/* Curriculum Section */
+.Curriculum h1 {
+    margin-top: 106px;
+    width: 50%;
+    font-size: 57px;
+    font-family: system-ui;
+    font-weight: bold;
+}
+
+.Curriculum p {
+    margin-top: 137px;
+    font-family: system-ui;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+._Curriculum {
+    margin-top: 120px;
+}
+
+.Curriculum_over img {
+    border-radius: 10px;
+    margin-top: 65px;
+    width: 94%;
+}
+
+.Curriculum_over h1 {
+    margin-top: 24px;
+    font-size: 34px;
+    font-family: system-ui;
+}
+
+.Curriculum_over p {
+    font-size: 17px;
+    font-family: system-ui;
+    margin-top: 13px;
+}
+
+/* Co-curricular Section */
+.co_curricular h1 {
+    margin-top: 192px;
+    font-size: 52px;
+    font-family: system-ui;
+    font-weight: 700;
+    margin-bottom: 37px;
+}
+
+.co_curricular p {
+    font-size: 18px;
+    font-family: system-ui;
+}
+
+.dot_cricle i {
+    margin-right: -3px;
+    margin-left: -31px;
+    color: #00ADEF;
+    font-size: 21px;
+    margin-top: 25px;
+}
+
+.dot_cricle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.dot_cricle h4 {
+    margin-left: 13px;
+    margin-top: 28px;
+    font-size: 28px;
+    font-family: system-ui;
+}
+
+.co_curricular img {
+    margin-top: 143px;
+    border-radius: 8px;
+    box-shadow: -54px 56px 0px #D9F3FD;
+    margin-left: 27px;
+}
+
+/* Footer Section */
+.footer_info h1 {
+    margin-top: 173px;
+    width: 72%;
+    font-size: 40px;
+    font-family: system-ui;
+    margin-bottom: 24px;
+    margin-left: 70px;
+}
+
+.footer_info p {
+    margin-bottom: 47px;
+    font-size: 16px;
+    font-family: system-ui;
+    margin-left: 70px;
+}
+
+footer {
+    background-color: #D9F3FD;
+    margin-top: 95px;
+    min-height: 63vh;
+}
+
+.logo_big {
+    width: 170%;
+    margin-left: 27px;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 15px;
+    font-family: system-ui;
+    margin-top: 18px;
+    margin-bottom: 81px;
+    font-weight: 400;
+}
+.color_bg{
+    margin-top: 16%;
+    background: #00ADEF;
+    padding: 127px 229px;
+    text-align: center;
+    color: #fff;
+    font-family: system-ui;
+    font-size: 25px;
+    border-radius: 24px;
+    }
